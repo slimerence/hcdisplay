@@ -1,0 +1,56 @@
+@import "spacespace/assets/css/plugins/owl.carousel.min.css";
+@import "spacespace/assets/css/plugins/magnific-popup.css";
+@import "spacespace/assets/css/flaticon.css";
+@import "spacespace/assets/css/reset.css";
+
+@import "spacespace/assets/css/home-version.css";
+@import "spacespace/assets/css/page.css";
+@import "spacespace/assets/css/style.css";
+@import "spacespace/assets/css/responsive.css";
+@import "../../../assets/sass/variables";
+@import "../../../assets/sass/frontend/category";
+@import "../../../assets/sass/frontend/catalog";
+@import "../../../assets/sass/frontend/checkout";
+
+.logo-area {
+  padding: 0;
+}
+
+.tab-content .list-group{
+  margin:2em 0;
+}
+
+#product-description-tab-content{
+  margin:2em 0;
+}
+
+.sidebar-body .media img{
+  width: 76px;
+  height: 76px;
+}
+
+.categoryfillter ul li {
+  border-bottom: none;
+}
+.categoryfillter span {
+    border-bottom: none;
+    padding: 0;
+}
+
+.categoryfillter {
+  margin-top: 2em;
+}
+
+.news-thum{
+  border-radius: 0;
+  height:18em;
+}
+
+.single-widget, .single-news-content {
+  margin-bottom: 2em;
+}
+
+.blog-desc{
+  max-height: 5em;
+  overflow: hidden;
+}

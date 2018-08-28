@@ -1,0 +1,1196 @@
+/*
+*
+* ------------------------------------------------------------------
+*[Master Stylesheet]
+*
+* Project: Construction - Html5 Responive Contraction Business Template
+* Version: 1.0
+* Created : 25/11/2017
+* Template URI:	http://envato.rajuahammad.com/construction
+* Author Name: Raju Ahammad
+* Author URI: http://rajuahammad.com/
+* Description: This is Multi Page Responsive HTML5 Contraction Business Template
+*
+* -------------------------------------------------------------------
+*
+*/
+
+/*===========================
+*	[Table of Contents]
+* ===========================
+*
+*	01. Body = body
+*	02. Preloader = .preloader
+*	03. Header Top = #header-top
+        3.1 - Social Icons = .header-social-icon
+        3.2 - Call Phone = .call-phone
+*	04. Header Bottom = #header-area
+*	    4.1 - Logo = .logo-area
+*	    4.2 - Menu Or Navbar = .main-menu
+*	05. Hero Area = #hero-area
+*	    5.1 - Hero Text = .hero-text
+*	06. Hero Box Area = #hero-box-area
+*	    6.1 - Single Hero Box = .single-hero-box
+*	07. About Area = #about-area
+*	    7.1 - About Text = .about-text
+*	    7.2 - About Video = .about-video
+*	08. Service Area = #service-area
+*	    8.1 - Single Service = .single-service
+*	09. Project Area = #project-area
+*	    9.1 - Project Menu = .project-menu
+*	    9.2 - Project Gird = .project-gird
+*	    9.3 - Single Project = .single-Project
+*	    9.4 - Project Hover = .project-hover
+*	10. Review Area = #review-area
+*	    10.1 - Review Content = .testimonial-content
+*	    10.2 - Single Review = .single-testimonial
+*	11. Partner Area = #partner-area
+*	    11.1 - Partner Content = .partner-content
+*	    11.2 - Single Partner = .single-partner
+*	12. News or Blog Area = #news-area
+*	    12.1 - Single News = .single-news-content
+*	    12.2 - News Thumbnail = .news-thum
+*	    12.3 - News Content = .news-contant
+*	13. Support Area = #support-area
+*	14. Newsletter Area = #newsletter-area
+*	15. Footer = #footer-area
+*	    15.1 - Footer Widget = .footer-widget
+*	    15.2 - Single Widget = .single-widget
+*	    15.3 - Widget Title = .widget-title
+*	    15.4 - Widget Conetnt = .widget-body
+*
+*
+*	Home Version Css include on assets/css/home-version.css
+*	And Pqge Css Include on assets/css/page.css
+*
+*/
+
+/*==========================================
+    Author Custom Style Here
+==========================================*/
+
+/*== Defualt CSS Here ==*/
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.section-title {
+    letter-spacing: 0.8px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.section-title h2 {
+    color: #fab702;
+    font-size: 43px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.section-title h2 span {
+    color: #323232;
+}
+
+.section-title h2::after {
+    background-color: #fab702;
+    border-radius: 50px;
+    bottom: -5px;
+    content: "";
+    height: 5px;
+    left: 50%;
+    margin-left: -35px;
+    position: absolute;
+    width: 70px;
+}
+
+.section-title p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+}
+
+.raj_btn {
+    background-color: #fab702;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-align: center;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.raj_btn:hover {
+    color: #fff;
+    background-color: #ffba00;
+}
+
+.raj_btn i.fa {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.raj_btn:hover i.fa {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    padding-left: 10px;
+}
+
+/*== Header Top CSS Start ==*/
+
+#header-top {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px 0;
+}
+
+#header-top a {
+    color: #fff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.header-social-icon li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.header-social-icon li:last-child {
+    margin-right: 0;
+}
+
+.header-social-icon li.connect-title {
+    margin-right: 22px;
+}
+
+#header-top a span {
+    color: #fab702;
+    font-weight: 400;
+}
+
+#header-top .header-social-icon li a:hover {
+    color: #fab702;
+}
+
+/*== Header Top CSS End ==*/
+
+/*== Header CSS Start ==*/
+
+#header-area {
+    z-index: 99;
+}
+
+.logo-area {
+    padding: 22px 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.logo-area a {
+    display: block;
+}
+
+.logo-area img {
+    max-width: 250px;
+}
+
+.main-menu ul li {
+    float: left;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.main-menu ul li a {
+    color: #1c1c1c;
+    display: block;
+    font-weight: 500;
+    font-family: "Exo";
+    letter-spacing: 0.6px;
+    font-size: 15px;
+    line-height: 16px;
+    padding: 40px 15px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.main-menu ul li.active a,
+.main-menu ul li:hover a {
+    background-color: #fab702;
+    color: #fff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.main-menu ul li .sub-menu {
+    background-color: #fab702;
+    left: 0;
+    position: absolute;
+    top: 150px;
+    width: 200px;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.main-menu ul li:hover .sub-menu {
+    top: 96px;
+    opacity: 1;
+    display: block;
+    visibility: visible;
+}
+
+.main-menu ul li .sub-menu li {
+    float: none;
+    position: relative;
+}
+
+.main-menu ul li .sub-menu li::after {
+    background-color: #fff;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    width: 100%;
+}
+
+.main-menu ul li .sub-menu li:last-child::after {
+    display: none;
+}
+
+.main-menu ul li .sub-menu li:hover a {
+    background-color: #333333;
+    color: #fff;
+}
+
+.main-menu ul li .sub-menu li a {
+    color: #fff;
+    font-size: 14px;
+    padding: 15px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+/*Header Fix CSS*/
+
+#header-area.fixedTop {
+    background: #fff;
+    -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*SlickNav Or Responsive Menu*/
+
+#header-area .container {
+    position: relative;
+}
+
+.slicknav_menu {
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.slicknav_nav ul {
+    margin: 0;
+}
+
+.slicknav_btn {
+    background-color: #fab702;
+    margin: 0;
+    padding: 10px 17px;
+    position: absolute;
+    right: 15px;
+    top: 31px;
+    z-index: 9;
+}
+
+.slicknav_nav {
+    background-color: #fab702;
+    left: 0;
+    position: absolute;
+    top: 96px;
+    width: 100%;
+    z-index: 9;
+}
+
+.slicknav_nav ul li .slicknav_row:hover {
+    background-color: transparent;
+    color: #222;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.slicknav_nav ul li ul {
+    padding-left: 20px;
+}
+
+.slicknav_nav ul li:hover {
+    background-color: #333;
+}
+
+.slicknav_nav ul li:hover a {
+    background-color: transparent;
+    color: #fff;
+}
+
+.slicknav_arrow {
+    display: none;
+}
+
+/*== Header CSS End ==*/
+
+/*== Hero Area CSS Start ==*/
+
+#hero-area {
+    background-color: #ddd;
+    background-image: url("/../images/hero-area-bg.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#hero-area:after {
+    background-color: #484848;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.74;
+    z-index: -1;
+}
+
+.hero-text h2 {
+    color: #fff;
+    font-size: 45px;
+    letter-spacing: 0.4px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.hero-text p {
+    color: #fab702;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    margin: 15px 0 28px;
+}
+
+.hero-text .raj_btn {
+    padding: 17px 0 17px 21px;
+    width: 180px;
+}
+
+.hero-text .raj_btn:hover {
+    padding-left: 0;
+}
+
+#hero-box-area {
+    margin-top: -153px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-box-area {
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.single-hero-box {
+    color: #616161;
+    font-size: 13px;
+    padding: 50px 20px;
+    position: relative;
+}
+
+#hero-box-area .col-lg-4:last-child .single-hero-box:after {
+    display: none;
+}
+
+.single-hero-box img {
+    width: 65px;
+}
+
+.single-hero-box h3 {
+    color: #616161;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 30px 0 20px;
+}
+
+/*== Hero Area CSS End ==*/
+
+/*== About Area CSS Start ==*/
+
+#about-area {
+    margin-top: 90px;
+}
+
+#service-area.section-padding {
+    padding-bottom: 40px;
+}
+
+.about-text {
+    line-height: 2em;
+}
+
+.color-text {
+    color: #fab702;
+    margin: 30px 0;
+}
+
+.about-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    -webkit-box-shadow: 0 0 70px rgba(116, 116, 116, 0.9);
+    box-shadow: 0 0 70px rgba(116, 116, 116, 0.9);
+    margin-top: 10px;
+}
+
+.about-video iframe {
+    border: medium none;
+    border-radius: 4px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*== About Area CSS End ==*/
+
+/*== Service Area CSS Start ==*/
+
+.single-service {
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    padding: 40px 20px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.single-service:hover {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 60px rgba(116, 116, 116, 0.20);
+    box-shadow: 0 0 60px rgba(116, 116, 116, 0.20);
+    margin-top: -5px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#service-area .section-title {
+    margin-bottom: 45px;
+}
+
+#service-area .col-lg-4:nth-child(1n + 4) .single-service {
+    margin-bottom: 0;
+}
+
+.single-service h3 {
+    color: #616161;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    padding-left: 50px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.single-service .service-icon {
+    bottom: 2px;
+    left: 0;
+    position: absolute;
+    color: #fab702;
+}
+
+#service-area .col-lg-4:nth-child(2) .service-icon {
+    bottom: -2px;
+}
+
+#service-area .col-lg-4:nth-child(3) .service-icon,
+#service-area .col-lg-4:nth-child(5) .service-icon,
+#service-area .col-lg-4:nth-child(6) .service-icon {
+    bottom: 4px;
+}
+
+#service-area .col-lg-4:nth-child(4) .service-icon {
+    bottom: 7px;
+}
+
+.service-icon.flaticon-building:before,
+.service-icon.flaticon-concrete-mixer:before,
+.service-icon.flaticon-window:before,
+.service-icon.flaticon-crane:before,
+.service-icon.flaticon-driller:before,
+.service-icon.flaticon-padlock:before {
+    font-size: 40px;
+}
+
+/*== Service Area CSS End ==*/
+
+/*== Project Area CSS Start ==*/
+
+#project-area.section-padding {
+    padding-bottom: 150px;
+}
+
+.project-menu {
+    margin-bottom: 65px;
+}
+
+.project-menu span {
+    border-bottom: 1px solid #959595;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    margin: 0 -5px 0 0;
+    padding: 0 10px 15px;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.project-menu span::before {
+    background-color: #fab702;
+    border-radius: 40px;
+    bottom: -2px;
+    content: "";
+    height: 3px;
+    left: -100%;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+}
+
+.project-menu span.active,
+.project-menu span:hover {
+    color: #fab702;
+}
+
+.project-menu span.active:before {
+    opacity: 1;
+    left: 0;
+    visibility: visible;
+}
+
+.single-project {
+    display: block;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.project-hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fab702;
+    font-size: 13px;
+    font-weight: 500;
+    height: 100%;
+    left: 0;
+    top: -100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.project-title-hvr {
+    border: 2px solid #fab702;
+    left: 0;
+    margin: 20px;
+    padding: 20px;
+    position: absolute;
+    top: 10%;
+}
+
+.project-hvr-icon {
+    bottom: 5%;
+    left: 0;
+    padding: 0 20px;
+    position: absolute;
+    width: 100%;
+}
+
+.project-title-hvr h3 {
+    color: #fff;
+    font-family: "Exo";
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.project-hvr-icon p {
+    display: inline-block;
+}
+
+/*== Project Area CSS End ==*/
+
+/*== Review Area CSS Start ==*/
+
+#review-area {
+    background-color: #fab702;
+    padding: 75px 0;
+}
+
+#review-area .section-title {
+    margin-bottom: 30px;
+}
+
+#review-area .section-title h2 {
+    color: #fff;
+}
+
+#review-area .section-title h2::after {
+    background-color: #fff;
+}
+
+.single-testimonial p {
+    color: #fff;
+    font-style: italic;
+}
+
+.single-testimonial h3 {
+    font-family: "Exo";
+    font-size: 23px;
+    margin-top: 60px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.single-testimonial.text-center h3::after {
+    content: "\f103";
+    font-family: FontAwesome;
+    font-size: 25px;
+    left: 50%;
+    position: absolute;
+    top: -43px;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+.single-testimonial h5 {
+    color: #fff;
+    font-family: "Exo";
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+/*== Review Area CSS End ==*/
+
+/*== Partner Area CSS Start ==*/
+
+#partner-area .owl-carousel img {
+    margin: auto;
+    width: auto;
+}
+
+.single-partner {
+    height: 160px;
+}
+
+
+/*== Partner Area CSS End ==*/
+
+/*== News Area CSS Start ==*/
+
+.news-thumbg-1 {
+    background-image: url('/../images/news/news-thum-1.jpg');
+}
+
+.news-thumbg-2 {
+    background-image: url('/../images/news/news-thum-2.jpg');
+}
+
+.news-thumbg-3 {
+    background-image: url('/../images/news/news-thum-3.jpg');
+}
+
+.single-news-content {
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.single-news-content:hover .news-thum {
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.single-news-content:hover {
+    -webkit-box-shadow: 0 0 60px rgba(116, 116, 116, 0.25);
+    box-shadow: 0 0 60px rgba(116, 116, 116, 0.25);
+}
+
+.single-news-content:hover .news-contant {
+    background-color: #fdfdfd;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.news-meta a:hover,
+.single-news-content:hover h4 a {
+    color: #fab702;
+}
+
+.news-thum {
+    background-color: #ddd;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    display: block;
+    height: 265px;
+    opacity: 0.8;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.news-contant {
+    background-color: #f8f8f8;
+    border-radius: 0 0 5px 5px;
+    font-size: 13px;
+    line-height: 1.9em;
+    padding: 25px 20px 35px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.news-contant h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.news-contant,
+.news-contant h4,
+.news-contant a {
+    color: #616161;
+    letter-spacing: 0.6px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.news-meta {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 10px 0 8px;
+}
+
+.news-meta a {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/*== News Area CSS End ==*/
+
+/*== Support Area CSS Start ==*/
+
+#support-area.section-padding {
+    padding-bottom: 0;
+}
+
+/*== Support Area CSS End ==*/
+
+/*== Newsletter Area CSS Start ==*/
+
+#newsletter-area {
+    background-image: url("/../images/newsletterbg.jpg");
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+}
+
+#newsletter-area:after {
+    background-color: #fab702;
+    content: "";
+    left: 0;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    opacity: 0.89;
+    z-index: -1;
+}
+
+.newsletter-conetent {
+    overflow: hidden;
+    text-align: center;
+}
+
+.newsletter-title h2 {
+    color: #1b1917;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 29px;
+    margin: 11px 0;
+    text-transform: uppercase;
+}
+
+.newsletter-form input {
+    border: medium none;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    margin: auto;
+    padding: 15px 25px;
+}
+
+.newsletter-form input[type="email"] {
+    color: #373737;
+    font-weight: 400;
+}
+
+.newsletter-form input[type="submit"] {
+    background-color: #1b1917;
+    color: #fab702;
+    cursor: pointer;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.newsletter-form input[type="submit"]:hover {
+    color: #fff;
+}
+
+
+/*== Newsletter Area CSS End ==*/
+
+/*== Footer Area CSS Start ==*/
+
+#footer-area {
+    background-color: #181818;
+    color: #fff;
+    padding: 40px 0 30px;
+}
+
+.footer-about {
+    padding-right: 55px;
+}
+
+.single-widget.footer-about img {
+    width: 80%;
+}
+
+.widget-body,
+.widget-body a {
+    color: #ebebeb;
+}
+
+
+
+.widget-body img {
+    margin-bottom: 25px;
+}
+
+.widget-title h4 {
+    color: #fab702;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    padding-bottom: 15px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.widget-title h4::after {
+    background-color: #fab702;
+    border-radius: 5px;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 55px;
+}
+
+.widget-title {
+    margin-bottom: 30px;
+}
+
+.footer-btn {
+    border: 2px solid #fab702;
+    border-radius: 3px;
+    color: #fab702 !important;
+    font-size: 12px;
+    font-weight: 600 !important;
+    letter-spacing: 0.6px;
+    margin-top: 20px;
+    padding: 10px 50px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-btn:hover {
+    background-color: #fab702;
+    color: #000 !important;
+}
+
+.widget-body ul li a {
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.widget-body a {
+    display: inline-block;
+    font-weight: 500;
+}
+
+.widget-body a span {
+    color: #fab702;
+    font-weight: 700;
+}
+
+.widget-body ul li:last-child a {
+    margin-bottom: 0;
+}
+
+.widget-body ul li a:hover {
+    color: #fab702 !important;
+}
+
+#footer-area ul.social-icon li {
+    display: inline-block;
+    font-size: 17px;
+    margin-right: 15px;
+}
+
+#footer-area ul.social-icon {
+    margin-top: 17px;
+}
+
+.con-btn {
+    color: #fab702 !important;
+    font-weight: 600 !important;
+}
+
+.email {
+    margin: 15px 0;
+}
+
+.address {
+    margin-bottom: 15px;
+}
+
+.footer-copyright {
+    border-top: 1px solid #fab702;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    margin-top: 60px;
+    padding-top: 25px;
+    position: relative;
+}
+
+.address-content a {
+    display: block;
+}
+
+.footer-copyright a {
+    color: #fab702;
+}
+
+/*== Footer Area CSS End ==*/
+
+/*== Scroll Top CSS ==*/
+
+.footer-copyright div#scroll-top {
+    background-color: #181818;
+    border: 1px solid #fab702;
+    border-radius: 3px;
+    color: #fab702;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    left: 50%;
+    padding: 8px 25px;
+    position: absolute;
+    text-transform: uppercase;
+    top: -20px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-copyright div#scroll-top:hover {
+    background-color: #fab702;
+    color: #181818;
+}
+
+/*== Scroll Top CSS ==*/
+
+/*== Preloader Area CSS Start ==*/
+
+body.loader-active {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.preloader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.preloader-spinner {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+
+.la-ball-scale-pulse,
+.la-ball-scale-pulse > div {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.la-ball-scale-pulse {
+    display: block;
+    font-size: 0;
+    color: #fff;
+}
+
+.la-ball-scale-pulse.la-dark {
+    color: #333;
+}
+
+.la-ball-scale-pulse > div {
+    display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor;
+}
+
+.la-ball-scale-pulse {
+    width: 32px;
+    height: 32px;
+}
+
+.la-ball-scale-pulse > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    opacity: .6;
+    -webkit-animation: ball-scale-pulse 2s infinite ease-in-out;
+    animation: ball-scale-pulse 2s infinite ease-in-out;
+}
+
+.la-ball-scale-pulse > div:last-child {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.la-ball-scale-pulse.la-sm {
+    width: 16px;
+    height: 16px;
+}
+
+.la-ball-scale-pulse.la-sm > div {
+    width: 16px;
+    height: 16px;
+}
+
+.la-ball-scale-pulse.la-2x {
+    width: 64px;
+    height: 64px;
+}
+
+.la-ball-scale-pulse.la-2x > div {
+    width: 64px;
+    height: 64px;
+}
+
+.la-ball-scale-pulse.la-3x {
+    width: 96px;
+    height: 96px;
+}
+
+.la-ball-scale-pulse.la-3x > div {
+    width: 96px;
+    height: 96px;
+}
+
+/*
+ * Animation
+ */
+
+@-webkit-keyframes ball-scale-pulse {
+    0%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes ball-scale-pulse {
+    0%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/*== Preloader Area CSS End ==*/

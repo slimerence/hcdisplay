@@ -1,0 +1,498 @@
+/*==========================================
+    Contact US Page CSS Here
+==========================================*/
+
+#header-area.single-page-header {
+    -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+#page-title-area {
+    background-image: url("../images/banner/banner1.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+#page-title-area:after {
+    background: #fab702;
+    content: "";
+    left: 0;
+    height: 100%;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.page-title.section-title {
+    margin-bottom: 0;
+}
+
+.page-title.section-title h2 {
+    color: #fff;
+}
+
+.page-title.section-title h2::after {
+    background-color: #fff;
+}
+
+.page-title.section-title p {
+    font-weight: 400;
+}
+
+#contact-information {
+    color: #fab702;
+    font-family: "Exo";
+    font-size: 16px;
+    font-weight: 500;
+    padding: 145px 0;
+    text-align: center;
+}
+
+.single-contact-info img {
+    font-size: 70px;
+    margin-bottom: 40px;
+    width: 65px;
+}
+
+.single-contact-info p {
+    color: #22252c;
+}
+
+.single-contact-info p span {
+    color: #fab702;
+}
+
+.single-contact-info {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+#google-map-area {
+    background: #fab702;
+    height: 600px;
+}
+
+#google-map-area iframe {
+    border: medium none;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    height: 100%;
+    margin: 0 0 -6px;
+    padding: 0;
+    width: 100%;
+}
+
+#contact-form-area {
+    font-family: "Exo";
+    font-weight: 500;
+    padding: 85px 0 150px;
+}
+
+.contact-form-contant h3 {
+    color: #22252c;
+    font-family: "Exo";
+    font-size: 37px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.contact-form-contant input,
+.contact-form-contant textarea {
+    border-color: #b8b8b8;
+    border-radius: 0;
+    color: #22252c;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 20px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.contact-form-contant textarea {
+    height: 265px;
+    resize: none;
+}
+
+.contact-form-contant .form-group {
+    margin-bottom: 30px;
+}
+
+.contact-form-contant input:hover,
+.contact-form-contant input:focus,
+.contact-form-contant input:active,
+.contact-form-contant textarea:hover,
+.contact-form-contant textarea:focus,
+.contact-form-contant textarea:active {
+    border-color: #fab702;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.contact-form-contant button {
+    border: medium none;
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 18px 0 18px 21px;
+    width: 180px;
+}
+
+.contact-form-contant button:focus,
+.contact-form-contant button:active {
+    color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+}
+
+.contact-form-contant button:hover {
+    color: #fff;
+    padding-left: 0;
+}
+
+.contact-form-contant .help-block.text-danger ul li {
+    color: #fab702;
+    margin-top: 5px;
+}
+
+.contact-form-contant #success .alert {
+    background-color: #fab702;
+    border: medium none;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.contact-form-contant .close {
+    color: #fff;
+    cursor: pointer;
+    opacity: 1;
+}
+
+/*==========================================
+    News Page CSS Here
+==========================================*/
+
+#news-page-news-feed {
+    padding: 120px 0 200px;
+}
+
+#news-page-news-feed .single-news-content {
+    margin-bottom: 30px;
+}
+
+.news-see-more-btn.raj_btn {
+    margin-top: 70px;
+}
+
+.news-see-more-btn.disabled {
+    border-radius: 0;
+    padding: 15px 40px;
+}
+
+.news-see-more-btn:focus,
+.news-see-more-btn:active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fab702;
+}
+
+#news-page-news-feed .news-slice {
+    display: none;
+}
+
+/*==========================================
+    News Open or Single Blog CSS Here
+==========================================*/
+
+#news-open-area.section-padding {
+    padding-bottom: 130px;
+}
+
+.news-heading h1 {
+    border-bottom: 1px solid #c0c0c0;
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding-bottom: 18px;
+}
+
+.news-heading {
+    margin-bottom: 35px;
+}
+
+.news-open-meta a {
+    color: #3a3a3a;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.news-open-meta a:hover {
+    color: #fab702;
+}
+
+.news-open-meta span {
+    font-weight: 500;
+    margin: 0 5px;
+}
+
+.news-open-meta i.fa {
+    color: #fab702;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.single-content-open p {
+    color: #7d7d7d;
+    font-family: "Exo";
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    line-height: 28px;
+    margin-bottom: 35px;
+}
+
+.single-content-open p:nth-child(5) {
+    color: #fab702;
+    font-style: italic;
+}
+
+.single-content-open img {
+    margin-bottom: 35px;
+}
+
+.single-content-open {
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.content-share-btn {
+    margin: 20px 0 90px;
+}
+
+.content-share-btn a {
+    border: 2px solid #fab702;
+    border-radius: 4px;
+    color: #fab702;
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 15px;
+    padding: 8px 15px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.content-share-btn a:hover {
+    background-color: #fab702;
+    color: #fff;
+}
+
+.content-share-btn a i.fa {
+    margin-right: 5px;
+}
+
+.content-share-btn a {
+    border: 2px solid #fab702;
+    border-radius: 4px;
+    color: #fab702;
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 15px;
+    padding: 8px 15px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.content-share-btn {
+    margin: 25px 0 90px;
+}
+
+.content-share-btn a:hover {
+    background-color: #fab702;
+    color: #fff;
+}
+
+.content-share-btn a i.fa {
+    margin-right: 5px;
+}
+
+.news-comment-form h2 {
+    color: #616161;
+    font-family: Exo;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.news-comment-form form input,
+.news-comment-form form textarea {
+    border: 1px solid #cdcdcd;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding: 20px 10px;
+    resize: none;
+    width: 100%;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.news-comment-form form input:hover,
+.news-comment-form form input:focus,
+.news-comment-form form input:active,
+.news-comment-form form textarea:hover,
+.news-comment-form form textarea:focus,
+.news-comment-form form textarea:active {
+    border-color: #fab702;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: medium none;
+}
+
+.comment-btn {
+    cursor: pointer;
+    border: none;
+}
+
+.single-sidebar {
+    margin-bottom: 50px;
+}
+
+.sidebar-title {
+    margin-bottom: 25px;
+}
+
+.sidebar-title h3 {
+    border-bottom: 1px solid #fab702;
+    color: #fab702;
+    font-size: 19px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.recent-news-side .media-body h5 {
+    color: #616161;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.sidebar-area a {
+    color: #616161;
+    font-weight: 600;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.single-sidebar ul li {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 12px 0;
+}
+
+.single-sidebar ul li a:hover {
+    color: #fab702;
+}
+
+.single-sidebar ul li:first-child {
+    padding-top: 0;
+}
+
+.recent-news-btn {
+    color: #fab702 !important;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+}
+
+.recent-news-btn:hover {
+    color: #22252c !important;
+}
+
+.recent-news-btn i.fa {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.recent-news-btn:hover i.fa {
+    padding-left: 6px;
+}
+
+/*==========================================
+   Project Or Portfolio Page CSS Here
+==========================================*/
+
+#project-page-project-feed {
+    padding: 130px 0;
+}
+
+#project-page-project-feed .news-see-more-btn {
+    background-color: transparent;
+    border: 2px solid #fab702;
+    color: #fab702;
+}
+
+#project-page-project-feed .news-see-more-btn:hover {
+    background-color: #fab702;
+    color: #fff !important;
+}
+
+.raj_btn.portfolio-btn {
+    margin-top: 40px;
+}
+
+.project-infor h3 {
+    color: #fab702;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    margin-bottom: 15px;
+}
+/*
+.single-content-open .project-infor p:nth-child(3) {
+    color: #fab702;
+    font-style: italic;
+}
+
+.single-content-open .project-infor p:nth-child(5) {
+    color: #7d7d7d;
+    font-style: normal;
+}
+*/
+.content-share-btn.project-share {
+    margin-bottom: 0;
+}
+
+.sidebar-body .sidebar-list.tag-list li a {
+    border: 1px solid #fab702;
+    border-radius: 3px;
+    color: #fab702;
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-right: 5px;
+    padding: 10px 20px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-family: "Exo";
+    font-weight: 500;
+}
+
+.sidebar-body .sidebar-list.tag-list li a:hover {
+    background-color: #fab702;
+    color: #fff;
+}
+
+.sidebar-body .sidebar-list.tag-list li {
+    border: medium none;
+    float: left;
+    padding: 0;
+}
