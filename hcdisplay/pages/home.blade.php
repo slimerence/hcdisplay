@@ -14,31 +14,39 @@
                             <div class="col-lg-11 aligncenter">
                                 <div class="row">
                                     <!-- Single HeroBox Start -->
-                                    <div class="col-lg-4 text-center">
+                                    <div class="col-lg-3 text-center">
                                         <div class="single-hero-box">
-                                            <img src="{{ asset('images/svg-icon/house.svg') }}" alt="Space Space">
-                                            <h3>Best Products</h3>
-                                            <p>Our make bearing also multiply. Fourth open, were.After blessed which sea, over fowl doesn't.</p>
+                                            <img src="{{ asset('images/hcdisplay/a1.png') }}" alt="Space Space">
+                                            <h3>Quality</h3>
+                                            <p>Ours are carefully constructed from durable materials and securely fastened to last a very long time.</p>
                                         </div>
                                     </div>
                                     <!-- Single HeroBox End End -->
 
                                     <!-- Single HeroBox Start -->
-                                    <div class="col-lg-4 text-center">
+                                    <div class="col-lg-3 text-center">
                                         <div class="single-hero-box">
-                                            <img src="{{ asset('images/svg-icon/crane.svg') }}" alt="Space Space">
-                                            <h3>Best Quailty</h3>
-                                            <p>Our make bearing also multiply. Fourth open, were.After blessed which sea, over fowl doesn't.</p>
+                                            <img src="{{ asset('images/hcdisplay/a2.png') }}" alt="Space Space">
+                                            <h3>Service</h3>
+                                            <p>Whether you need help choosing the best signs or displays for your application we're ready to help.</p>
                                         </div>
                                     </div>
                                     <!-- Single HeroBox End End -->
 
                                     <!-- Single HeroBox Start -->
-                                    <div class="col-lg-4 text-center">
+                                    <div class="col-lg-3 text-center">
                                         <div class="single-hero-box">
-                                            <img src="{{ asset('images/svg-icon/plug.svg') }}" alt="Space Space">
-                                            <h3>Best Staff</h3>
-                                            <p>Our make bearing also multiply. Fourth open, were.After blessed which sea, over fowl doesn't.</p>
+                                            <div class="font-as"><i class="fa fa-money fa-fw" aria-hidden="true"></i></div>
+                                            <h3>Price</h3>
+                                            <p> Little things like shipping display racks unassembled and manufacturing in large quantities save you money.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 text-center">
+                                        <div class="single-hero-box">
+                                            <div class="font-as"><i class="fa fa-truck fa-fw" aria-hidden="true"></i></div>
+                                            <h3>Delivery</h3>
+                                            <p>With an extensive, in-stock inventory that you won't waste time waiting on fixtures to arrive.</p>
                                         </div>
                                     </div>
                                     <!-- Single HeroBox End End -->
@@ -68,12 +76,10 @@
                 <!-- About Text Start -->
                 <div class="col-lg-6">
                     <div class="about-text">
-                        <p>Suspendisse viverra. Congue, suscipit curae; magnis accumsan, faucibus varius tempus ridiculus ac duis et semper Enim taciti primis, aenean, porttitor curabitur sed, euismod ligula scelerisque interdum ridiculus montes purus eget diam rhoncus scelerisque mauris, habitasse arcu donec velit litora vel vehicula inceptos sociis.</p>
+                        <p>Marco Dazzle. (HC Display) is a professional high-tech enterprise specialized in production, sales, research and development of roll up, A board, pop-up stands and display equipment...etc. </p>
 
-                        <p class="color-text">Sociis per iaculis molestie elit ac sit hymenaeos mattis adipiscing mus libero nostra nisi cubilia varius. Integer hymenaeos ridiculus. </p>
+                        <p class="color-text">Our headquarter is in Suzhou. In order to serve our customers better, we invested and built our factory (Suzhou HongCai Exhibition Equipment Co., Ltd.), which specially manufactures the roll up, X/L banner stand, pop up, flagpole and so on. </p>
 
-                        <p>Curae; varius diam nisi fusce blandit cum sit velit convallis suscipit viverra. euismod ligula scelerisque interdum ridiculus scelerisque interdum ridiculus montes purus eget diam rhoncus scelerisque mauris.
-                        </p>
                     </div>
                 </div>
                 <!-- About Text End -->
@@ -81,7 +87,7 @@
                 <!-- About Video Start -->
                 <div class="col-lg-6">
                     <div class="about-video">
-                        <iframe src="https://www.youtube-nocookie.com/embed/O69q6FHR99U?rel=0&amp;showinfo=0"></iframe>
+                        <iframe src="https://www.youtube.com/embed/1d4ymQxwdZ0?rel=0&amp;controls=0&amp;showinfo=0"></iframe>
                     </div>
                 </div>
                 <!-- About Video End -->
@@ -168,7 +174,7 @@
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
                         <h2>Customer <span>Review</span></h2>
-                        <p>Clients testimonial</p>
+                        <p style="color: #fff;">Clients testimonial</p>
                     </div>
                 </div>
             </div>
@@ -223,24 +229,24 @@
             </div>
 
             <div class="row">
-
+                @foreach($posts as $key=>$post)
+                    @if($post->feature_image)
                 <!-- Single News Start -->
                 <div class="col-lg-4 col-md-6">
                     <div class="single-news-content">
-                        <a href="news-open.html" class="news-thum news-thumbg-2"></a>
+                        <a href="{{ url('/page'.$post->uri) }}" class="news-thum" style="background-image: url({{ asset($post->feature_image) }});"></a>
                         <div class="news-contant">
-                            <h4><a href="news-open.html">CCNA Featured Multiple Media Report Today Us.</a></h4>
-
+                            <h4><a href="{{ url('/page'.$post->uri) }}">{{ $post->title }}</a></h4>
                             <p class="news-meta">
-                                <a href="#"><i class="fa fa-clock-o"></i> 10, October, 2017</a>
-                                <a href="news-open.html" class="alignright rd-btn">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                <a href="{{ url('/page'.$post->uri) }}"><i class="fa fa-clock-o"></i>{{ $post->updated_at->format('d, F, Y') }}</a>
                             </p>
-                            <p>Lorem ipsum dadipi sit amet, consectetur adipi elit, sed do eiusmod tempor incididunt ut labore et dolore adipi magna aliqua.</p>
+                            <p style="max-height: 4em;overflow: hidden">{!! $post->teasing !!}</p>
                         </div>
                     </div>
                 </div>
                 <!-- Single News End  -->
-
+                @endif
+            @endforeach
             </div>
         </div>
     </section>

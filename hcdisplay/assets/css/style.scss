@@ -82,7 +82,7 @@
 }
 
 .section-title h2 {
-    color: #fab702;
+    color: $theme-color;
     font-size: 43px;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -95,7 +95,7 @@
 }
 
 .section-title h2::after {
-    background-color: #fab702;
+    background-color: $theme-color;
     border-radius: 50px;
     bottom: -5px;
     content: "";
@@ -112,7 +112,7 @@
 }
 
 .raj_btn {
-    background-color: #fab702;
+    background-color: $theme-color;
     border-radius: 3px;
     color: #fff;
     display: inline-block;
@@ -128,7 +128,7 @@
 
 .raj_btn:hover {
     color: #fff;
-    background-color: #ffba00;
+    background-color: $theme-colorlt;
 }
 
 .raj_btn i.fa {
@@ -174,12 +174,12 @@
 }
 
 #header-top a span {
-    color: #fab702;
+    color: $theme-color;
     font-weight: 400;
 }
 
 #header-top .header-social-icon li a:hover {
-    color: #fab702;
+    color: $theme-color;
 }
 
 /*== Header Top CSS End ==*/
@@ -226,14 +226,14 @@
 
 .main-menu ul li.active a,
 .main-menu ul li:hover a {
-    background-color: #fab702;
+    background-color: $theme-color;
     color: #fff;
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
 .main-menu ul li .sub-menu {
-    background-color: #fab702;
+    background-color: $theme-color;
     left: 0;
     position: absolute;
     top: 150px;
@@ -316,7 +316,7 @@
 }
 
 .slicknav_btn {
-    background-color: #fab702;
+    background-color: $theme-color;
     margin: 0;
     padding: 10px 17px;
     position: absolute;
@@ -326,7 +326,7 @@
 }
 
 .slicknav_nav {
-    background-color: #fab702;
+    background-color: $theme-color;
     left: 0;
     position: absolute;
     top: 96px;
@@ -394,7 +394,7 @@
 }
 
 .hero-text p {
-    color: #fab702;
+    color: $theme-color;
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 0.8px;
@@ -433,7 +433,16 @@
 }
 
 .single-hero-box img {
-    width: 65px;
+    height: 65px;
+}
+
+.single-hero-box{
+    .font-as{
+        i{
+            color: $theme-color;
+            font-size: 65px;
+        }
+    }
 }
 
 .single-hero-box h3 {
@@ -460,7 +469,7 @@
 }
 
 .color-text {
-    color: #fab702;
+    color: $theme-color;
     margin: 30px 0;
 }
 
@@ -529,7 +538,7 @@
     bottom: 2px;
     left: 0;
     position: absolute;
-    color: #fab702;
+    color: $theme-color;
 }
 
 #service-area .col-lg-4:nth-child(2) .service-icon {
@@ -583,7 +592,7 @@
 }
 
 .project-menu span::before {
-    background-color: #fab702;
+    background-color: $theme-color;
     border-radius: 40px;
     bottom: -2px;
     content: "";
@@ -597,7 +606,7 @@
 
 .project-menu span.active,
 .project-menu span:hover {
-    color: #fab702;
+    color: $theme-color;
 }
 
 .project-menu span.active:before {
@@ -617,7 +626,7 @@
 
 .project-hover {
     background-color: rgba(0, 0, 0, 0.6);
-    color: #fab702;
+    color: $theme-color;
     font-size: 13px;
     font-weight: 500;
     height: 100%;
@@ -629,7 +638,7 @@
 }
 
 .project-title-hvr {
-    border: 2px solid #fab702;
+    border: 2px solid $theme-color;
     left: 0;
     margin: 20px;
     padding: 20px;
@@ -661,7 +670,7 @@
 /*== Review Area CSS Start ==*/
 
 #review-area {
-    background-color: #fab702;
+    background-color: $theme-color;
     padding: 75px 0;
 }
 
@@ -763,7 +772,7 @@
 
 .news-meta a:hover,
 .single-news-content:hover h4 a {
-    color: #fab702;
+    color: $theme-color;
 }
 
 .news-thum {
@@ -790,8 +799,16 @@
 }
 
 .news-contant h4 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
+    height: 3.2em;
+}
+
+.news-meta{
+    .short-desc{
+        height: 3.5em;
+        overflow: hidden;
+    }
 }
 
 .news-contant,
@@ -836,7 +853,7 @@
 }
 
 #newsletter-area:after {
-    background-color: #fab702;
+    background-color: $theme-color;
     content: "";
     left: 0;
     height: 100%;
@@ -877,7 +894,7 @@
 
 .newsletter-form input[type="submit"] {
     background-color: #1b1917;
-    color: #fab702;
+    color: $theme-color;
     cursor: pointer;
     text-transform: capitalize;
     -webkit-transition: all 0.3s ease 0s;
@@ -919,7 +936,7 @@
 }
 
 .widget-title h4 {
-    color: #fab702;
+    color: $theme-color;
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.7px;
@@ -929,7 +946,7 @@
 }
 
 .widget-title h4::after {
-    background-color: #fab702;
+    background-color: $theme-color;
     border-radius: 5px;
     bottom: 0;
     content: "";
@@ -944,9 +961,9 @@
 }
 
 .footer-btn {
-    border: 2px solid #fab702;
+    border: 2px solid $theme-color;
     border-radius: 3px;
-    color: #fab702 !important;
+    color: $theme-color !important;
     font-size: 12px;
     font-weight: 600 !important;
     letter-spacing: 0.6px;
@@ -957,7 +974,7 @@
 }
 
 .footer-btn:hover {
-    background-color: #fab702;
+    background-color: $theme-color;
     color: #000 !important;
 }
 
@@ -975,7 +992,7 @@
 }
 
 .widget-body a span {
-    color: #fab702;
+    color: $theme-color;
     font-weight: 700;
 }
 
@@ -984,7 +1001,7 @@
 }
 
 .widget-body ul li a:hover {
-    color: #fab702 !important;
+    color: $theme-color !important;
 }
 
 #footer-area ul.social-icon li {
@@ -998,7 +1015,7 @@
 }
 
 .con-btn {
-    color: #fab702 !important;
+    color: $theme-color !important;
     font-weight: 600 !important;
 }
 
@@ -1011,7 +1028,7 @@
 }
 
 .footer-copyright {
-    border-top: 1px solid #fab702;
+    border-top: 1px solid $theme-color;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 0.7px;
@@ -1025,7 +1042,7 @@
 }
 
 .footer-copyright a {
-    color: #fab702;
+    color: $theme-color;
 }
 
 /*== Footer Area CSS End ==*/
@@ -1034,9 +1051,9 @@
 
 .footer-copyright div#scroll-top {
     background-color: #181818;
-    border: 1px solid #fab702;
+    border: 1px solid $theme-color;
     border-radius: 3px;
-    color: #fab702;
+    color: $theme-color;
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
@@ -1052,7 +1069,7 @@
 }
 
 .footer-copyright div#scroll-top:hover {
-    background-color: #fab702;
+    background-color: $theme-color;
     color: #181818;
 }
 

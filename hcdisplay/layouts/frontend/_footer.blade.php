@@ -7,7 +7,7 @@
                 <div class="col-lg-4 d-none d-xl-block">
                     <div class="single-widget footer-about">
                         <div class="widget-body">
-                            <img src="{{ asset('img/footer-logo.png') }}" alt="Space">
+                            <img src="{{ asset('images/logo.png') }}" alt="Space">
                             <p>Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                             <p style="margin-top: 30px;">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eiust.</p>
                             <a href="/" target="_blank" class="footer-btn">Enquire Now</a>
@@ -22,7 +22,7 @@
                         <div class="col-lg-4 col-md-6 d-xl-none">
                             <div class="single-widget footer-about">
                                 <div class="widget-body">
-                                    <img src="{{ asset('images/footer-logo.png') }}" alt="Spce">
+                                    <img src="{{ asset('images/logo.png') }}" alt="Spce">
                                     <p>Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                                     <p style="margin-top: 30px;">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eiust.</p>
                                     <a href="/" target="_blank" class="footer-btn">Enquire Now</a>

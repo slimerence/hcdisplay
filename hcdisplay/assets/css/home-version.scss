@@ -3,13 +3,13 @@ Home Version 1 CSS Here
 ========================*/
 
 .home_version_1 .slide-content {
-    background-color: #fab702;
+    background-color: $theme-color;
     padding: 50px 30px 50px 0;
     position: relative;
 }
 
 .home_version_1 .slide-content::before {
-    background-color: #fab702;
+    background-color: $theme-color;
     content: "";
     height: 100%;
     left: -10000%;
@@ -24,12 +24,12 @@ Home Version 1 CSS Here
 
 .home_version_1 .raj_btn {
     background: #fff;
-    color: #fab702;
+    color: $theme-color;
     text-align: center;
 }
 
 .home_version_1 .raj_btn:hover {
-    color: #fab702;
+    color: $theme-color;
     background-color: #fff;
 }
 
@@ -121,7 +121,7 @@ Home Version 2 CSS Here
 
 .home_version_1 .owl-dots .owl-dot.active,
 .home_version_2 .owl-dots .owl-dot.active {
-    background-color: #fab702;
+    background-color: $theme-color;
 }
 
 html,

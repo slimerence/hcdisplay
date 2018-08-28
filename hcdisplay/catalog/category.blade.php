@@ -18,7 +18,7 @@
             <!-- News Open page Contant Start -->
             <div class="row">
                 <!-- Sidebar Area Start -->
-                <div class="col-lg-4 col-md-12">
+                <div class="col-lg-3 col-md-12">
                     <div class="sidebar-area">
                         <!-- Single Sidebar Start -->
                         <aside class="single-sidebar">
@@ -40,7 +40,7 @@
                 </div>
                 <!-- Sidebar Area End -->
                 <!-- News Open page News Content Start -->
-                <div class="col-lg-8 col-md-12">
+                <div class="col-lg-9 col-md-12">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="row">
@@ -55,16 +55,15 @@
                                     @foreach($row as $key=>$product)
                                     <div class="col-lg-4 col-md-6 news-slice">
                                         <div class="single-news-content">
-
-                                                <a href="{{ url('catalog/product/'.$product->uri) }}" class="news-thum" style="background-image: url({{ $product->getProductDefaultImageUrl() }})"></a>
-                                                    <div class="news-contant">
-                                                        <h4><a href="{{ url('catalog/product/'.$product->uri) }}">{{ $product->name }}</a></h4>
-                                                        <p class="news-meta">
-                                                            <a href="#"><i class="fa fa-money"></i>${{ $product->getDefaultPriceGST() }}</a>
-                                                            <a href="{{ url('catalog/product/'.$product->uri) }}" class="alignright rd-btn">Read More <i class="fa fa-long-arrow-right"></i></a>
-                                                            {!! $product->short_description !!}
-                                                        </p>
-                                                    </div>
+                                            <a href="{{ url('catalog/product/'.$product->uri) }}" class="news-thum" style="background-image: url({{ $product->getProductDefaultImageUrl() }})"></a>
+                                            <div class="news-contant">
+                                                <h4><a href="{{ url('catalog/product/'.$product->uri) }}">{{ $product->name }}</a></h4>
+                                                <div class="news-meta">
+                                                    <a href="{{ url('catalog/product/'.$product->uri) }}"><i class="fa fa-money"></i>${{ $product->getDefaultPriceGST() }}</a>
+                                                    <a href="{{ url('catalog/product/'.$product->uri) }}" class="alignright rd-btn">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                                    <div class="short-desc">{!! $product->short_description !!}</div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     @endforeach

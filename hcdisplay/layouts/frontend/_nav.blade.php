@@ -10,7 +10,7 @@
                     @endforeach
                 </ul>
             </li>
-            <li><a href="{{ url('aboutus') }}">About</a></li>
+            <li><a href="{{ url('about-us') }}">About</a></li>
             <li><a href="{{ url('page/blog') }}">News &amp; Media</a></li>
             <li><a href="{{ url('contact-us') }}"> Contact Us</a></li>
         </ul>

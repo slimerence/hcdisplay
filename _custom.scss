@@ -1,12 +1,13 @@
-@import "spacespace/assets/css/plugins/owl.carousel.min.css";
-@import "spacespace/assets/css/plugins/magnific-popup.css";
-@import "spacespace/assets/css/flaticon.css";
-@import "spacespace/assets/css/reset.css";
+@import "hcdisplay/assets/css/general";
+@import "hcdisplay/assets/css/plugins/owl.carousel.min.css";
+@import "hcdisplay/assets/css/plugins/magnific-popup.css";
+@import "hcdisplay/assets/css/flaticon.css";
+@import "hcdisplay/assets/css/reset";
 
-@import "spacespace/assets/css/home-version.css";
-@import "spacespace/assets/css/page.css";
-@import "spacespace/assets/css/style.css";
-@import "spacespace/assets/css/responsive.css";
+@import "hcdisplay/assets/css/home-version";
+@import "hcdisplay/assets/css/page";
+@import "hcdisplay/assets/css/style";
+@import "hcdisplay/assets/css/responsive.css";
 @import "../../../assets/sass/variables";
 @import "../../../assets/sass/frontend/category";
 @import "../../../assets/sass/frontend/catalog";
@@ -14,6 +15,9 @@
 
 .logo-area {
   padding: 0;
+  img{
+    max-width: 200px;
+  }
 }
 
 .tab-content .list-group{

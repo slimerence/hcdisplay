@@ -34,7 +34,7 @@ mix.js('resources/assets/js/backend.js', 'public/js')
 *   拷贝图片等
 */
 mix.copyDirectory(['resources/assets/images'],'public/images')
-    .copyDirectory(['resources/views/frontend/custom/hcdisplay/assets/img'],'public/img')
+    .copyDirectory(['resources/views/frontend/custom/hcdisplay/assets/images'],'public/images')
     .copyDirectory(['resources/views/frontend/custom/hcdisplay/assets/fonts'],'public/fonts')
     .copyDirectory(['resources/views/frontend/custom/hcdisplay/assets/js'],'public/js');
 

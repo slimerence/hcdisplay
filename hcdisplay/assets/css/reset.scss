@@ -115,12 +115,12 @@ ul li {
 }
 
 ::-moz-selection {
-    background-color: #fab702;
+    background-color: $theme-color;
     color: #fff;
 }
 
 ::selection {
-    background-color: #fab702;
+    background-color: $theme-color;
     color: #fff;
 }
 
