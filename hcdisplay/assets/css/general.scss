@@ -1,8 +1,54 @@
 $theme-color:#dd261b;
 $theme-colorlt:#ff3c30;
+$bg-whitelight:#f9f9f9;
 
+.ptb-15{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.ptb-20{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .ptb-60{
-  padding-top:60px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.ptb-80{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.ptb-100{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.mt-30{
+  margin-top:30px;
+}
+.mt{
+  margin-top: 2em;
+}
+.mb{
+  margin-bottom: 2em;
+}
+.no-list-style{
+  ul{
+    margin:0;
+    padding:0;
+  }
+  ul li{
+    list-style: none;
+  }
+}
+.section-pt{
+  padding-top:60px;
+}
+.border-none{
+  border:none!important;
+}
+a{
+  color:black;
+}

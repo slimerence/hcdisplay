@@ -671,6 +671,8 @@
 
 #review-area {
     background-color: $theme-color;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 75px 0;
 }
 
@@ -911,8 +913,8 @@
 /*== Footer Area CSS Start ==*/
 
 #footer-area {
-    background-color: #181818;
-    color: #fff;
+    background-color: $bg-whitelight;
+    color: #000;
     padding: 40px 0 30px;
 }
 
@@ -926,7 +928,7 @@
 
 .widget-body,
 .widget-body a {
-    color: #ebebeb;
+    color: #000;
 }
 
 
@@ -1050,7 +1052,7 @@
 /*== Scroll Top CSS ==*/
 
 .footer-copyright div#scroll-top {
-    background-color: #181818;
+    background-color: $bg-whitelight;
     border: 1px solid $theme-color;
     border-radius: 3px;
     color: $theme-color;

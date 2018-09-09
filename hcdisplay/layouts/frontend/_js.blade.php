@@ -17,7 +17,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
 <!--=== Parallax Bg Js ===-->
 <script src="{{ asset('js/plugins/parallax-bg.js') }}"></script>
-
+@if(isset($paymentMethods))
+    <script src="https://js.stripe.com/v3/"></script>
+@endif
 <!--=== Mian Js ===-->
 <script src="{{ asset('js/main.js') }}"></script>
 <script src="{{ asset('js/all.js') }}"></script>
