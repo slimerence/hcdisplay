@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="page-title section-title">
-                        <h2>Find <span>More</span></h2>
+                        <h2>Product <span>Detail</span></h2>
                         <p>about our products</p>
                     </div>
                 </div>
@@ -37,6 +37,10 @@
                                 <span class="badge badge-pill badge-danger">Out of Stock</span>
                             @endif
                         </h2>
+                    </div>
+                    <div class="project-infor">
+                        <h3>Product Info:</h3>
+                        @include(_get_frontend_theme_path('catalog.elements.sections.short_description'))
                     </div>
                     <form id="add-to-cart-form">
                         {{ csrf_field() }}
@@ -90,14 +94,10 @@
                             </div>
                         </div>
                     </form>
-                    <div class="project-infor">
-                        <h3>Product Info:</h3>
-                        @include(_get_frontend_theme_path('catalog.elements.sections.short_description'))
-                    </div>
+
                     <div class="content-share-btn project-share">
-                        <a href="http://facebook.com/divergentstudiobd" target="_blank"><i class="fa fa-facebook"></i> Like</a>
-                        <a href="http://facebook.com/divergentstudiobd" target="_blank"><i class="fa fa-twitter"></i> Tweet</a>
-                        <a href="http://facebook.com/divergentstudiobd" target="_blank"><i class="fa fa-share-alt"></i> Share</a>
+                        <a href="{{ $siteConfig->facebook }}" target="_blank"><i class="fa fa-facebook"></i> Like</a>
+                        <a href="{{ $siteConfig->twitter }}" target="_blank"><i class="fa fa-share-alt"></i> Share</a>
                     </div>
                 </div>
 

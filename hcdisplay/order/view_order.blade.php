@@ -1,12 +1,7 @@
 @extends(_get_frontend_layout_path('catalog'))
 @section('content')
-    <section class="ptb-100">
-        <div class="module-wrapper">
-            <div class="container module-title">
-                <a class="module-breadcrumbs-link" href="{{ url('/') }}">Home</a> <span class="module-breadcrumbs-divider">/</span>
-                View Order
-            </div>
-        </div>
+    <section class="ptb-60">
+
     <div class="container ptb-60" id="view-orders-manager-app">
         <div class="box">
             <div class="col is-pulled-left">

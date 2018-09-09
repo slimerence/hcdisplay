@@ -1,13 +1,8 @@
 @extends(_get_frontend_layout_path('catalog'))
 
 @section('content')
-    <section class="ptb-100">
-        <div class="module-wrapper">
-            <div class="container module-title">
-                <a class="module-breadcrumbs-link" href="{{ url('/') }}">Home</a> <span class="module-breadcrumbs-divider">/</span>
-                My Profile
-            </div>
-        </div>
+    <section class="ptb-60">
+
     <div class="container" id="user-profile-manager-app">
         <div class="content ptb-60">
             <div class="row">

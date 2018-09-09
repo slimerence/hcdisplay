@@ -5,7 +5,6 @@
             <div class="col-lg-12 text-center">
                 <div class="section-title">
                     <h2>About <span>Us</span></h2>
-                    <p>who are you?</p>
                 </div>
             </div>
         </div>
