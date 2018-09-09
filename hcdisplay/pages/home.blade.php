@@ -222,7 +222,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
-                        <h2>Recent <span>News</span></h2>
+                        <h2>Our <span>Work</span></h2>
                         <p>important news feed</p>
                     </div>
                 </div>

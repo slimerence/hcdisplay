@@ -237,4 +237,5 @@ $(document).ready(function(){
             $(this).children('.mask').eq(0).css('top','-201px');
         });
     }
+
 });
