@@ -54,9 +54,9 @@
                                 </div>
                                 <div class="widget-body">
                                     <ul>
-                                        <li><a href="#">Terms & Conditions</a></li>
-                                        <li><a href="#">Shipping & Returns</a></li>
-                                        <li><a href="#">Forget Password</a></li>
+                                        <li><a href="{{ url('/term') }}">Terms & Conditions</a></li>
+                                        <li><a href="{{ url('/return') }}">Shipping & Returns</a></li>
+                                        <li><a href="{{ url('frontend/customers/forget-password') }}">Forget Password</a></li>
                                     </ul>
                                 </div>
                             </div>

@@ -21,4 +21,21 @@ class CustomPageController extends Controller
 
         return view(_get_frontend_theme_path('pages.about'),$this->dataForView);
     }
+
+    public function return(){
+        $this->dataForView['menuName'] = 'return';
+        return view(
+            _get_frontend_theme_path('pages.return'),
+            $this->dataForView
+        );
+    }
+
+    public function term(){
+        //return response()->download( public_path(). '/download/terms.pdf');
+        $this->dataForView['menuName'] = 'term';
+        return view(
+            _get_frontend_theme_path('pages.term'),
+            $this->dataForView
+        );
+    }
 }

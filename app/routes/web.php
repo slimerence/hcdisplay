@@ -12,5 +12,6 @@
 */
 
 Route::get('/about-us', '\Smartbro\Controllers\CustomPageController@about');
-
+Route::get('/term', '\Smartbro\Controllers\CustomPageController@term');
+Route::get('/return', '\Smartbro\Controllers\CustomPageController@return');
 

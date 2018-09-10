@@ -153,7 +153,7 @@
                     <h3>My Notes</h3>
                     <textarea class="textarea note-text" name="notes" placeholder="Please leave your notes here ..." rows="3"></textarea>
                     <input required type="checkbox" name="agree" class="checkbox" checked>
-                    I agree to <a target="_blank" class="hyperlink" href="{{ url('/frontend/content/view/terms') }}">Terms and Conditions</a> and <a target="_blank" class="hyperlink" href="{{ url('/frontend/content/view/privacy-policy') }}">Privacy Policy</a>
+                    I agree to <a target="_blank" class="hyperlink" href="{{ url('/term') }}">Terms and Conditions</a> and <a target="_blank" class="hyperlink" href="{{ url('/return') }}">Privacy Policy</a>
                     </div>
                     <el-button type="primary" native-type="submit"
                         :disabled="customer.length==0"
