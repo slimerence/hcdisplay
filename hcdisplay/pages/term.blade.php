@@ -12,7 +12,7 @@
             </div>
         </div>
     </section>
-    <section class="ptb-60" style="background-color: #fafafa;">
+    <section class="ptb-60">
         <div class="container">
             <div class="about-item" style="padding: 4em;
     box-shadow: 3px 3px 20px #969696;">
