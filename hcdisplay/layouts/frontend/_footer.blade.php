@@ -37,9 +37,9 @@
                                 </div>
                                 <div class="widget-body">
                                     <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Our Work</a></li>
+                                        <li><a href="{{ url('/') }}">Home</a></li>
+                                        <li><a href="{{ url('/about-us') }}">About Us</a></li>
+                                        <li><a href="{{ url('/page/blog') }}">Our Work</a></li>
                                     </ul>
                                 </div>
                             </div>

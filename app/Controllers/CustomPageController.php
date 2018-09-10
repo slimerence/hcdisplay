@@ -19,6 +19,6 @@ class CustomPageController extends Controller
 
     public function about(){
 
-        return view(_get_frontend_theme_path('pages.404'),$this->dataForView);
+        return view(_get_frontend_theme_path('pages.about'),$this->dataForView);
     }
 }

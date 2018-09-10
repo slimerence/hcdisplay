@@ -177,4 +177,39 @@
 #payment-form .payment-method-title{
   background-color:unset;
   color:#000;
+  padding:unset;
+}
+
+.about-item{
+  p{
+    margin: 15px 0;
+  }
+  h3{
+     font-family:'Source Sans Pro', sans-serif;
+     text-transform:uppercase;
+     position: relative;
+     text-align: center;
+     margin-bottom:1.2em ;
+     &:after{
+        background-color: #dd261b;
+        border-radius: 50px;
+        bottom: -10px;
+        content: "";
+        height: 5px;
+        left: 50%;
+        margin-left: -35px;
+        position: absolute;
+        width: 70px;
+     }
+   }
+  h2{
+    font-family:'Source Sans Pro', sans-serif;
+    text-transform:uppercase;
+    text-align: center;
+    position: relative;
+  }
+  padding: 15px;
+  border-radius: 5px;
+  border:1px solid #e3e3e3;
+  margin-bottom:2em;
 }

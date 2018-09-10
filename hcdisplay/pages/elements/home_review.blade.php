@@ -13,32 +13,20 @@
         <div class="row">
             <div class="col-lg-10 aligncenter">
                 <div class="testimonial-content owl-carousel">
-                    <!-- Single Testimonial Start -->
                     <div class="single-testimonial text-center">
-                        <p>Sed. Curabitur Vehicula tempor enim. Blandit porttitor. Nulla elementum elit leo. Vulputate malesuada phasellus. Mus. Etiam eget vestibulum felis arcu.</p>
-
-                        <h3>JHONSON MARTIN</h3>
-                        <h5>Joomshaper</h5>
+                        <p>Its great to work with them, always on time and always answering. </p>
                     </div>
-                    <!-- Single Testimonial End -->
-
-                    <!-- Single Testimonial Start -->
                     <div class="single-testimonial text-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse fugiat commodi, corporis blanditiis voluptatem magni magnam minima cupiditate.</p>
-
-                        <h3>John Deo</h3>
-                        <h5>RR Foundation</h5>
+                        <p>The product is a good product,this is the 2nd time we are buying from them and we were always happy.</p>
                     </div>
-                    <!-- Single Testimonial End -->
-
-                    <!-- Single Testimonial Start -->
                     <div class="single-testimonial text-center">
-                        <p>Apparently, Adblock Plus can remove Font Awesome brand icons with their "Remove Social Media Buttons" setting. We will not use hacks to force them to display.</p>
-
-                        <h3>VongChong Smith</h3>
-                        <h5>Space Space</h5>
+                        <p>Good vendor,nice talking and gentleman on whole.</p>
                     </div>
-                    <!-- Single Testimonial End -->
+                    <div class="single-testimonial text-center">
+                        <p>they are good salesman,on right time with right products ，always. </p>
+                       {{-- <h5>hcdisplay</h5>--}}
+                    </div>
+
                 </div>
             </div>
         </div>

@@ -30,7 +30,7 @@
             @else
                 <div class="col is-pulled-right" style="margin-right: 1%;">
                     <a class="button is-link is-pulled-right" href="{{ url('frontend/my_orders') }}">
-                        <i class="fas fa-arrow-left"></i>&nbsp;Back
+                        <i class="fa fa-arrow-left"></i>&nbsp;Back
                     </a>
                 </div>
             @endif
@@ -39,9 +39,9 @@
 
 
         <div class="box">
-            <div class="col">
-                @include(_get_frontend_theme_path('order.elements.summary'))
-                @include(_get_frontend_theme_path('order.elements.customer'))
+            <div class="row">
+                <div class="col-6">@include(_get_frontend_theme_path('order.elements.summary'))</div>
+                <div class="col-6">@include(_get_frontend_theme_path('order.elements.customer'))</div>
             </div>
             <div class="is-clearfix"></div>
         </div>
@@ -51,9 +51,9 @@
             <div class="is-clearfix"></div>
         </div>
         <div class="box">
-            <div class="col">
-                @include(_get_frontend_theme_path('order.elements.shipment'))
-                @include(_get_frontend_theme_path('order.elements.notes'))
+            <div class="row">
+                <div class="col-6">@include(_get_frontend_theme_path('order.elements.shipment'))</div>
+                <div class="col-6">@include(_get_frontend_theme_path('order.elements.notes'))</div>
             </div>
             <div class="is-clearfix"></div>
         </div>
@@ -79,7 +79,7 @@
             @else
                 <div class="col" style="margin-right: 1%;">
                     <a class="button is-link is-pulled-right" href="{{ url('frontend/my_orders') }}" role="button">
-                        <i class="fas fa-arrow-left"></i>&nbsp;Back
+                        <i class="fa fa-arrow-left"></i>&nbsp;Back
                     </a>
                 </div>
             @endif

@@ -23,9 +23,8 @@
                 <!-- Single Contact Info Start -->
                 <div class="col-lg-3 col-md-6">
                     <div class="single-contact-info">
-                        <img src="{{ asset('img/svg-icon/support.svg') }}" alt="">
+                        <img src="{{ asset('images/svg-icon/support.svg') }}" alt="">
                         <p><span>Tel: </span> {{$config->contact_phone}}</p>
-                        <p><span>Mob: </span> {{$config->contact_fax}}</p>
                     </div>
                 </div>
                 <!-- Single Contact Info End -->
@@ -33,7 +32,7 @@
                 <!-- Single Contact Info Start -->
                 <div class="col-lg-3 col-md-6">
                     <div class="single-contact-info">
-                        <img src="{{ asset('img/svg-icon/map.svg') }}" alt="">
+                        <img src="{{ asset('images/svg-icon/map.svg') }}" alt="">
                         <p>{{ $config->contact_address }}</p>
                     </div>
                 </div>
@@ -42,7 +41,7 @@
                 <!-- Single Contact Info Start -->
                 <div class="col-lg-3 col-md-6">
                     <div class="single-contact-info">
-                        <img src="{{ asset('img/svg-icon/mail.svg') }}" alt="">
+                        <img src="{{ asset('images/svg-icon/mail.svg') }}" alt="">
                         <p>{{ $config->contact_email }}</p>
                     </div>
                 </div>
@@ -51,9 +50,8 @@
                 <!-- Single Contact Info Start -->
                 <div class="col-lg-3 col-md-6">
                     <div class="single-contact-info">
-                        <img src="{{ asset('img/svg-icon/clock.svg') }}" alt="">
-                        <p><span>Week Days: </span> 05:00 – 22:00</p>
-                        <p><span>Sunday: </span> Closed</p>
+                        <img src="{{ asset('images/svg-icon/clock.svg') }}" alt="">
+                        <p><span>Open: </span> 24/7</p>
                     </div>
                 </div>
                 <!-- Single Contact Info End -->

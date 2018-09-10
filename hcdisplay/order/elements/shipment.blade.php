@@ -1,4 +1,4 @@
-<div class="content-block content-half">
+<div class="content-block">
     <div class="content-title-line">
         <h3>
             Delivery
