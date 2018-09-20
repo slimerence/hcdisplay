@@ -1,5 +1,5 @@
-<h5 class="options-title">Options:</h5>
-<hr>
+<div class="project-infor">
+<h3 class="options-title">Options:</h3>
 <?php
     foreach ($product_options as $key=>$product_option){
         switch ($product_option->type) {
@@ -17,4 +17,5 @@
         }
     }
 ?>
+</div>
 <hr>

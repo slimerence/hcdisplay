@@ -30,13 +30,25 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
-                    <div class="news-heading">
+                    <div class="product-heading">
                         <h2>
                             {{ $product->name }}&nbsp;
                             @if($product->manage_stock && $product->stock<$product->min_quantity)
                                 <span class="badge badge-pill badge-danger">Out of Stock</span>
                             @endif
                         </h2>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">
+                        @if($product->special_price)
+                                <span class="money">${{ $product->getSpecialPriceGST() }}</span>
+                                <span class="product-price-compare">
+                              <span class="original money">${{ $product->getDefaultPriceGST() }}(GST Incl.)</span>
+                            </span>
+                            @else
+                                <span class="money">${{ $product->getDefaultPriceGST() }} (GST Incl.)</span>
+                            @endif
+                        </span>
                     </div>
                     <div class="project-infor">
                         <h3>Product Info:</h3>

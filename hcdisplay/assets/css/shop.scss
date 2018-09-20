@@ -139,6 +139,19 @@
   display: block;
   margin: 0 0 5px;
 }
+.product-heading{
+  h2{
+    text-transform: uppercase;
+  }
+}
+.product-option-input-wrap{
+  select{
+    padding: 10px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 0px;
+    color: #888;
+  }
+}
 .product-price-compare .original{
   text-decoration: line-through;
 }
@@ -150,8 +163,8 @@
 }
 .product-price {
   display: block;
-  font-size: 28px;
-  line-height: 38px;
+  font-size: 22px;
+  line-height: 33px;
   color: #797676;
 }
 .product-short{

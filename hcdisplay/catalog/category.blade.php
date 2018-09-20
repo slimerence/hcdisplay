@@ -75,7 +75,7 @@
                                                         <a href="{{ url('catalog/product/'.$product->uri) }}"><strong style="text-decoration: line-through;">${{ $promotionProduct->getSpecialPriceGST() }}</strong> <span>${{ $promotionProduct->getDefaultPriceGST() }}</span></a>
                                                     @else <a href="{{ url('catalog/product/'.$product->uri) }}">${{ $product->getDefaultPriceGST() }}</a>
                                                     @endif
-                                                    <a href="{{ url('catalog/product/'.$product->uri) }}" class="alignright rd-btn">Shop Now <i class="fa fa-shopping-cart"></i></a>
+                                                    <a href="{{ url('catalog/product/'.$product->uri) }}" class="alignright rd-btn">View Now <i class="fa fa-shopping-cart"></i></a>
                                                 </div>
                                             </div>
                                         </div>
