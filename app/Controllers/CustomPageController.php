@@ -38,4 +38,7 @@ class CustomPageController extends Controller
             $this->dataForView
         );
     }
+    public function verify(){
+        return response()->download( public_path(). '/storage/uploads/87BD1DBEB10ABFF450C4440EBABBB0D3.txt');
+    }
 }

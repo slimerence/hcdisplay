@@ -14,4 +14,5 @@
 Route::get('/about-us', '\Smartbro\Controllers\CustomPageController@about');
 Route::get('/term', '\Smartbro\Controllers\CustomPageController@term');
 Route::get('/return', '\Smartbro\Controllers\CustomPageController@return');
+Route::get('/.well-known/pki-validation/87BD1DBEB10ABFF450C4440EBABBB0D3.txt','\Smartbro\Controllers\CustomPageController@verify');
 
