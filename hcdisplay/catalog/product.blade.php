@@ -21,7 +21,7 @@
             <div class="row">
                 <!-- News Open page News Content Start -->
                 <div class="col-lg-6 col-md-12">
-                    <div class="single-content-open project-open">
+                    <div class="single-content-open project-open" style="border-bottom:unset;">
                         <div class="fotorama" data-allowfullscreen="true" data-nav="thumbs" data-navposition="left" data-arrows="false" data-autoplay="true" data-height="350" data-maxheight="100%">
                             @foreach($product_images as $key=>$media)
                                 <img src="{{ asset($media->url) }}">
