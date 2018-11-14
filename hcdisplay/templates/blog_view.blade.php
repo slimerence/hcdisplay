@@ -20,7 +20,7 @@
                 <div class="col-lg-12">
                     <div class="news-heading">
                         <h1>{{ $blog->title }}</h1>
-
+                    </div>
                 </div>
             </div>
             <!-- News Open page News Heading or Title End -->
