@@ -51,7 +51,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-contact-info">
                         <img src="{{ asset('images/svg-icon/clock.svg') }}" alt="">
-                        <p><span>Open: </span>Mon- Fri 10:00 - 17:00</p>
+                        <p><span>Open: </span>Mon- Fri 10:00 - 16:00</p>
                     </div>
                 </div>
                 <!-- Single Contact Info End -->
