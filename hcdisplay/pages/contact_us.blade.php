@@ -33,7 +33,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-contact-info">
                         <img src="{{ asset('images/svg-icon/map.svg') }}" alt="">
-                        <p>{{ $config->contact_address }}</p>
+                        <p>{{ $config->contact_address }}<span>(For appointment only)</span></p>
                     </div>
                 </div>
                 <!-- Single Contact Info End -->
