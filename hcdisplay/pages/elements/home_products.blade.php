@@ -13,7 +13,7 @@
             @foreach($promotionProducts as $product)
                 <div class="col-lg-3 col-md-6 news-slice">
                     <div class="single-news-content">
-                        <a href="{{ url('catalog/product/'.$product->uri) }}" class="news-thum" style="background-image: url({{ $product->getProductDefaultImageUrl() }})"></a>
+                        <a href="{{ url('catalog/product/'.$product->uri) }}" class="news-thum" style="background-image: url({{ $product->getProductDefaultImageUrl() }});background-size: 100% 100%;"></a>
                         <div class="product-content">
                             <h4><a href="{{ url('catalog/product/'.$product->uri) }}">{{ $product->name }}</a></h4>
                             <div class="news-meta">
