@@ -16,7 +16,7 @@
                 <!-- Single News Start -->
                     <div class="col-lg-4 col-md-6">
                         <div class="single-news-content">
-                            <a href="{{ url('/page'.$post->uri) }}" class="news-thum" style="background-image: url({{ asset($post->feature_image) }});"></a>
+                            <a href="{{ url('/page'.$post->uri) }}" class="news-thum" style="background-image: url({{ asset($post->feature_image) }});background-size: cover;"></a>
                             <div class="news-contant">
                                 <h4><a href="{{ url('/page'.$post->uri) }}">{{ $post->title }}</a></h4>
                                 <p class="news-meta">

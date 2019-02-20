@@ -36,7 +36,6 @@
                 <li class="nav-item"> <a class="nav-link" href="{{ url('frontend/customers/login') }}"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i><span> Login</span></a></li>
                 <li class="nav-item"> <a class="nav-link" href="{{ url('frontend/customers/register') }}"><i class="fa fa-user fa-fw" aria-hidden="true"></i><span> Register</span></a></li>
             @else
-                <li class="nav-item"> <a class="nav-link" href="{{ url('frontend/my_orders/'.session('user_data.uuid')) }}"><i class="fa fa-wpforms fa-fw" aria-hidden="true"></i><span>My Order</span></a></li>
                 <li class="nav-item"> <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
                         <i class="fa fa-sign-out" aria-hidden="true"></i>
                         <span> Logout</span>

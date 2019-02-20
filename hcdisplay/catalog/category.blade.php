@@ -17,43 +17,7 @@
 
             <!-- News Open page Contant Start -->
             <div class="row">
-                <!-- Sidebar Area Start -->
-                <div class="col-lg-3 col-md-12">
-                    <div class="sidebar-area">
-                        <!-- Single Sidebar Start -->
-                        <aside class="single-sidebar">
-                            <div class="sidebar-title">
-                                <h3><i class="fa fa-folder-open-o"></i> Categories</h3>
-                            </div>
-
-                            <div class="sidebar-body">
-                                <ul class="sidebar-list">
-                                    @foreach ($categoriesTree as $item)
-                                        <?php $childrens = \App\Models\Catalog\Category::where('parent_id', $item->id)->where('include_in_menu',true)
-                                            ->orderBy('position','asc')
-                                            ->get();
-                                        ?>
-                                        <li class="main-side"><a href="{{ url('category/view/'.$item->uri) }}">{{$item ->name}}
-                                            @if(count( $childrens )>0)
-                                                <i class="fa fa-angle-right fa-fw"></i>
-                                            @endif
-                                            </a></li>
-                                        @if(count( $childrens )>0)
-                                            <ul class="sub-side-ul">
-                                            @foreach($childrens as $subnav)
-                                                <li><a class="sub-side" href="{{ url('category/view/'.$subnav->uri )}}">{{$subnav->name }}</a></li>
-                                            @endforeach
-                                            </ul>
-                                        @endif
-                                    @endforeach
-                                </ul>
-                            </div>
-                        </aside>
-                        <!-- Single Sidebar End -->
-
-                    </div>
-                </div>
-                <!-- Sidebar Area End -->
+               
                 <!-- News Open page News Content Start -->
                 <div class="col-lg-9 col-md-12">
                     <div class="row">
@@ -67,7 +31,7 @@
                                     @foreach($row as $key=>$product)
                                     <div class="col-lg-4 col-md-6 news-slice">
                                         <div class="single-news-content">
-                                            <a href="{{ url('catalog/product/'.$product->uri) }}" class="news-thum" style="background-image: url({{ $product->getProductDefaultImageUrl() }})"></a>
+                                            <a href="{{ url('catalog/product/'.$product->uri) }}" class="news-thum" style="background-image: url({{ $product->getProductDefaultImageUrl() }});background-size: cover;"></a>
                                             <div class="product-content">
                                                 <h4><a href="{{ url('catalog/product/'.$product->uri) }}">{{ $product->name }}</a></h4>
                                                 <div class="news-meta">
@@ -94,7 +58,43 @@
                     </div>
                 </div>
                 <!-- News Open page News Content End -->
+                <!-- Sidebar Area Start -->
+                <div class="col-lg-3 col-md-12">
+                    <div class="sidebar-area">
+                        <!-- Single Sidebar Start -->
+                        <aside class="single-sidebar">
+                            <div class="sidebar-title">
+                                <h3><i class="fa fa-folder-open-o"></i> Categories</h3>
+                            </div>
 
+                            <div class="sidebar-body">
+                                <ul class="sidebar-list">
+                                    @foreach ($categoriesTree as $key=>$item)
+                                        <?php $childrens = \App\Models\Catalog\Category::where('parent_id', $item->id)->where('include_in_menu',true)
+                                            ->orderBy('position','asc')
+                                            ->get();
+                                        ?>
+                                        <li class="main-side"><a href="{{ url('category/view/'.$item->uri) }}">{{$item ->name}}
+                                                @if(count( $childrens )>0)
+                                                    <i class="fa fa-angle-right fa-fw"></i>
+                                                @endif
+                                            </a></li>
+                                        @if(count( $childrens )>0)
+                                            <ul class="sub-side-ul">
+                                                @foreach($childrens as $subnav)
+                                                    <li><a class="sub-side" href="{{ url('category/view/'.$subnav->uri )}}">{{$subnav->name }}</a></li>
+                                                @endforeach
+                                            </ul>
+                                        @endif
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </aside>
+                        <!-- Single Sidebar End -->
+
+                    </div>
+                </div>
+                <!-- Sidebar Area End -->
 
             </div>
             <!-- News Open page Contant End -->
