@@ -17,7 +17,7 @@
 
             <!-- News Open page Contant Start -->
             <div class="row">
-               
+
                 <!-- News Open page News Content Start -->
                 <div class="col-lg-9 col-md-12">
                     <div class="row">
@@ -31,7 +31,7 @@
                                     @foreach($row as $key=>$product)
                                     <div class="col-lg-4 col-md-6 news-slice">
                                         <div class="single-news-content">
-                                            <a href="{{ url('catalog/product/'.$product->uri) }}" class="news-thum" style="background-image: url({{ $product->getProductDefaultImageUrl() }});background-size: cover;"></a>
+                                            <a href="{{ url('catalog/product/'.$product->uri) }}" class="news-thum" style="background-image: url({{ $product->getProductDefaultImageUrl() }});background-size: 100% 100%;"></a>
                                             <div class="product-content">
                                                 <h4><a href="{{ url('catalog/product/'.$product->uri) }}">{{ $product->name }}</a></h4>
                                                 <div class="news-meta">
