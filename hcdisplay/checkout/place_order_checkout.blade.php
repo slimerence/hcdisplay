@@ -127,12 +127,14 @@
                             <span class="column">Cart Subtotal (GST Incl.):</span>
                             <span class="column"><b>{{ config('system.CURRENCY').' '.($cart->total()) }} ({{$cart->count()}} {{ $cart->count()>1 ?'Items':'Item' }})</b></span>
                         </p>
+                        @if(false)
                         <p class="columns is-marginless">
                             <span class="column">Shipping Fee (GST Incl.):</span>
                             <span class="column"><b>{{ config('system.CURRENCY').' '.(number_format($delivery_charge,2)) }}</b></span>
                         </p>
+                        @endif
                         <p class="columns is-marginless">
-                            <span class="column">Total (GST Incl.):</span>
+                            <span class="column">Total (GST Incl.)(Shipping Fee Not Incl.):</span>
                             <?php
                             $cartTotal = str_replace(',','',$cart->total());
                             ?>
