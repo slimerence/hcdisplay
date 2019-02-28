@@ -134,7 +134,7 @@
                         </p>
                         @endif
                         <p class="columns is-marginless">
-                            <span class="column">Total (GST Incl.)(Shipping Fee Not Incl.):</span>
+                            <span class="column">Total (GST Incl.)(Delivery Exclude):</span>
                             <?php
                             $cartTotal = str_replace(',','',$cart->total());
                             ?>
