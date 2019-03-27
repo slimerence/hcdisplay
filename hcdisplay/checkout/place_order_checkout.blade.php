@@ -38,7 +38,7 @@
                         <a href="{{ url('frontend/my_profile/'.session('user_data.uuid')) }}" class="button is-info is-pulled-right"><i class="fa fa-edit" aria-hidden="true"></i>&nbsp;Update</a>
                         @else
                         <p>WHAT'S YOUR SHIPPING ADDRESS?</p>
-                            <el-form :model="shippingForm" :rules="rules" ref="shippingForm" label-width="70px" class="demo-shippingForm">
+                            <el-form :model="shippingForm" :rules="rules" ref="shippingForm" label-width="80px" class="demo-shippingForm">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <el-form-item label="Name" prop="name">
@@ -68,8 +68,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <el-form-item label="Suburb" prop="city">
-                                            <el-input v-model="shippingForm.city" placeholder="Suburb"></el-input>
+                                        <el-form-item label="City" prop="city">
+                                            <el-input v-model="shippingForm.city" placeholder="City / Suburb"></el-input>
                                         </el-form-item>
                                     </div>
                                     <div class="col-md-4">
@@ -127,14 +127,18 @@
                             <span class="column">Cart Subtotal (GST Incl.):</span>
                             <span class="column"><b>{{ config('system.CURRENCY').' '.($cart->total()) }} ({{$cart->count()}} {{ $cart->count()>1 ?'Items':'Item' }})</b></span>
                         </p>
-                        @if(false)
+                        @if(true)
+                        <p class="columns is-marginless">
+                            <span class="column">Total Weight:</span>
+                            <span class="column"><b>{{ $weight }} kg</b></span>
+                        </p>
                         <p class="columns is-marginless">
                             <span class="column">Shipping Fee (GST Incl.):</span>
                             <span class="column"><b>{{ config('system.CURRENCY').' '.(number_format($delivery_charge,2)) }}</b></span>
                         </p>
                         @endif
                         <p class="columns is-marginless">
-                            <span class="column">Total (GST Incl.)(Delivery Exclude):</span>
+                            <span class="column">Total (GST Incl.):</span>
                             <?php
                             $cartTotal = str_replace(',','',$cart->total());
                             ?>

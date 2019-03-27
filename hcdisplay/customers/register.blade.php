@@ -72,7 +72,7 @@
 
                 <div class="row">
                     <div class="col-md-3 col-sm-6 {{ $errors->has('city') ? ' has-error' : '' }}">
-                        <label for="inputCity" class="label">Suburb&nbsp;<span class="has-text-danger">*</span></label>
+                        <label for="inputCity" class="label">City&nbsp;<span class="has-text-danger">*</span></label>
                         <input required type="text" class="input {{ $errors->has('city') ? 'text-danger' : '' }}" id="inputCity" value="{{ old('city') }}" name="city" placeholder="Suburb / City">
                         @if ($errors->has('city'))
                             <p class="help alert-danger">
@@ -82,7 +82,18 @@
                     </div>
                     <div class="col-md-3 col-sm-6 {{ $errors->has('state') ? ' has-error' : '' }}">
                         <label for="inputState" class="label">State&nbsp;<span class="has-text-danger">*</span></label>
+{{--
                         <input required type="text" class="input {{ $errors->has('state') ? 'text-danger' : '' }}" value="{{ old('state') }}" name="state" id="inputState" placeholder="State">
+--}}
+                        <select name="state" id="inputState" class="{{ $errors->has('state') ? 'text-danger' : '' }}">
+                            <option value="ACT">Australian Capital Territory</option>
+                            <option value="NSW">New South Wales</option>
+                            <option value="NT">Northern Territory</option>
+                            <option value="QLD">Queensland</option>
+                            <option value="TAS">Tasmania</option>
+                            <option value="VIC">Victoria</option>
+                            <option value="WA">Western Australia</option>
+                        </select>
                         @if ($errors->has('state'))
                             <p class="help alert-danger">
                                 <span>{{ $errors->first('state') }}</span>
