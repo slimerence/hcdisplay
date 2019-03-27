@@ -26,7 +26,7 @@
                             property="name"
                             label="{{ trans('cart.Product') }}" width="300">
                         <template slot-scope="scope">
-                            <a :href="'frontend/product/'+scope.row.id" class="product-name">
+                            <a :href="'catalog/product/'+scope.row.id" class="product-name">
                                 @{{ scope.row.name }}
                             </a>
                             <div v-for="(item, idx) in scope.row.options" class="product-option-item">
