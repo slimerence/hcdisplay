@@ -52,7 +52,19 @@
 
 .news-thum{
   border-radius: 0;
-  height:24em;
+  height:19em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .news-thum{
+    height:24em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .news-thum{
+    height:24em;
+  }
 }
 
 .single-widget, .single-news-content {
